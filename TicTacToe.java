@@ -1,6 +1,6 @@
 import java.util.*;
 
-//This application allows a user to go against a non-AI computer. If you get three symbols consecutively, you win. 
+//This application allows a user to go against a non-AI computer. If you get three symbols consecutively, you win! 
 
 public class TicTacToe {
 	static ArrayList<Integer> playerPos = new ArrayList<>(); //static so it can be accessed by any function
