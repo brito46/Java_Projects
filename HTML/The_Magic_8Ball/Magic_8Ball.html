@@ -1,0 +1,43 @@
+<html>
+  <body>
+	 <center>
+	 <h1 style="color:blue;"> Are the Giants Ever Going to the Superbowl Again?? </h1> 
+   <!--The question for the all mighty 8ball-->
+	 </center>
+	 <p> </p> <!--this just creates space below h1 so the picture isnt touching the phrase-->
+	 <style> 
+	   body {  
+      background-color: #ffcc66  
+		 }
+   </style> 
+   <script> //writing JS here
+    function light() {
+    var number = Math.round(Math.random()*100); //random function prints out any postive number less than 1.
+    //number is now mainly a value from 1-100, which will be used to generate a random pre-defined phrases
+    if (number % 2 ==0) pic = "8ball_Yes.jpg"
+
+    else if(number % 3 ==0) pic = "8ball_No.jpg"
+
+    else {
+      pic = "8ball_Maybe.jpg" //the 8Ball was designed to produce only 3 outcomes. more options can be implemented 
+    }
+  document.getElementById('myImage').src = pic; //changing the source, which is the image displaying
+  }
+  </script>
+  <style> 
+    img { 
+      display: block; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  <img id="myImage" src="8ball.jpg" width="300" height="380">
+
+  <p>
+  <center>
+  <button type="button" onclick="light()">Press me if you dare</button> 
+  <!--you can keep pressing to possibly generate a new phrase-->
+  </center>
+  </p>
+</body>
+</html>
