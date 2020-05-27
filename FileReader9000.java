@@ -1,13 +1,16 @@
 import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 
-//your next task is to find out how many times a file says regardless
-//and then the other tasks is to replace the word regardless with however
+
 public class FileReader9000 {
-     public static void main(String []args){
+     public static void main(String []args) throws IOException{
 
      	//the file we wanted to read was http://textfiles.com/100/captmidn.txt
 
-     	File file = new File("\Users\jbrit\Documents\captmidn.txt"); //about to open a new file; 
+     	File file = new File("C:/Users/jbrit/Documents/captmidn.txt"); //about to open a new file; 
      	                    //we pass the path of the file as a string; i put the location of where my file can be found
 
      	Scanner scan = new Scanner(file); //scanning file; but we usually make it scan our input
@@ -22,7 +25,7 @@ public class FileReader9000 {
      		//concat is almost as same as append by adding string to the end of string, but append allows string characters to be added to end as well
      	}
 
-     	FileWriter writer = new FileWriter("\Users\jbrit\Documents\updatedFile.txt"); //adding the path of the new file;also called new file as "updatedfile"
+     	FileWriter writer = new FileWriter("C:/Users/jbrit/Documents/updatedFile.txt"); //adding the path of the new file;also called new file as "updatedfile"
      	writer.write(fileContent);                                                    //this new file was created by the java program
      	writer.close(); 
      }
